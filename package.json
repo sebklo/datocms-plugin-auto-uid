@@ -1,5 +1,5 @@
 {
-  "name": "datocms-plugin-datocms-plugin-auto-uid",
+  "name": "datocms-plugin-auto-uid",
   "homepage": "https://github.com/sebklo/datocms-plugin-auto-id",
   "version": "0.0.1",
   "description": "Generates UID",
