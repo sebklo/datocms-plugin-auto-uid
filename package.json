@@ -1,7 +1,7 @@
 {
   "name": "datocms-plugin-auto-uuid",
   "homepage": "https://github.com/sebklo/datocms-plugin-auto-uid",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Generates UUID",
   "main": "index.js",
   "scripts": {
