@@ -26,7 +26,7 @@
   "author": "Klosiek <klosiek19791@gmail.com>",
   "license": "ISC",
   "datoCmsPlugin": {
-    "title": "Datocms Plugin Auto Uid",
+    "title": "Datocms Plugin Auto UUID",
     "previewImage": "docs/preview.gif",
     "coverImage": "docs/cover.png",
     "entryPoint": "dist/index.html",
