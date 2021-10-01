@@ -17,7 +17,7 @@
     "datocms-plugin",
     "field-addon",
     "string-field",
-    "auto-uid"
+    "auto-uuid"
   ],
   "files": [
     "dist",
