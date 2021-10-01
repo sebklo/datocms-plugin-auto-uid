@@ -12,7 +12,7 @@ const Main = ({ plugin }) => {
     setLoading(true);
 
     const client = new SiteClient(plugin.parameters.global.datoCmsApiToken);
-    const uids = [];
+    const uuids = [];
 
     // Get model ID
     client.itemTypes
@@ -30,15 +30,30 @@ const Main = ({ plugin }) => {
           )
           .then((items) => {
             items.forEach((item) => {
-              uids.push(item[plugin.field.attributes.api_key]);
+              uuids.push(item[plugin.field.attributes.api_key]);
             });
 
             let id = '';
 
             for (;;) {
-              id = `${randomstring.generate(8)}-${randomstring.generate(4)}-${randomstring.generate(4)}-${randomstring.generate(4)}-${randomstring.generate(12)}`.toLowerCase();
+              id = `${randomstring.generate({
+                length: 8,
+                charset: 'hex',
+              })}-${randomstring.generate({
+                length: 4,
+                charset: 'hex',
+              })}-${randomstring.generate({
+                length: 4,
+                charset: 'hex',
+              })}-${randomstring.generate({
+                length: 4,
+                charset: 'hex',
+              })}-${randomstring.generate({
+                length: 12,
+                charset: 'hex',
+              })}`.toLowerCase();
 
-              if (!uids.includes(id)) {
+              if (!uuids.includes(id)) {
                 break;
               }
             }

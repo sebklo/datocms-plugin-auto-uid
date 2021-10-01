@@ -1,8 +1,8 @@
 {
-  "name": "datocms-plugin-auto-uid",
-  "homepage": "https://github.com/sebklo/datocms-plugin-auto-id",
-  "version": "0.0.1",
-  "description": "Generates UID",
+  "name": "datocms-plugin-auto-uuid",
+  "homepage": "https://github.com/sebklo/datocms-plugin-auto-uid",
+  "version": "0.0.2",
+  "description": "Generates UUID",
   "main": "index.js",
   "scripts": {
     "start": "npx webpack-dev-server --port 5000",
